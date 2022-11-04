@@ -1,0 +1,121 @@
+body{
+    background-color: #4b4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 2s;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+#imageDiv{
+    top:20%;
+    position: absolute;
+    left:37.5rem;
+    opacity: 0;
+    transition: 2s;
+}
+img{
+    margin-right:10px;
+    width:45rem;
+    height:35rem;
+    border-radius: 2rem;
+    border:2px solid #5cffeb;
+    filter:grayscale(45%);
+}
+table{
+    left:30%;
+    top:20%;
+    position:absolute;
+    width: 45rem;
+    height:35rem;
+    color:whitesmoke;
+    background: #272627;
+    border:2px solid #5cffeb;
+    padding:1rem 3rem 2rem 1rem;
+    font-size: 1.2rem;
+    font-family: Verdana, serif;
+    border-radius: 2rem;
+    transition: all 2s;
+}
+input{
+    color:whitesmoke;
+    background-color: #272627;
+    border:0.1em solid #5cffeb;
+    font-size: 1.2rem;
+    padding:5px;
+    font-family: Verdana, serif;
+    border-radius: 0.4em;
+    margin:5px;
+}
+#header{
+    background-color:whitesmoke;
+    font-size: 1.2rem;
+    color:black;
+    width:98.95%;
+}
+#navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    width:100%;
+    border:2px solid #5cffeb;
+}
+#navigation li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px 12.6rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#navigation:nth-child(4){
+    padding: 16px;
+}
+#navigation li a{
+    text-decoration: none;
+    color:white;
+}
+#navigation li:hover{
+    background-color: #5cffeb;
+    color:blue;
+}
+textarea{
+    color:whitesmoke;
+    background-color: #272627;
+    border:0.1em solid #5cffeb;
+    font-size: 1.2rem;
+    padding:5px;
+    font-family: Verdana, serif;
+    border-radius: 0.4em;
+    margin-left:2rem;
+    width:16rem;
+    height:10rem;
+}
+#buttonCol{
+    font-size: 1.4rem;
+    width:10rem;
+    margin-top: 0.1rem;
+    padding:1rem;
+    position:relative;
+    transition: all 0.5s;
+}
+#aboutYrsl{
+    padding-left:2rem;
+}
+#buttonCol:hover{
+    cursor: pointer;
+    background-color: #5cffeb;
+    color:black;
+    font-weight: bold;
+}
+#lastTd {
+    text-align: center;
+}
+#registrationTd{
+    font-size: 2rem;
+    text-decoration: #5cffeb;
+}

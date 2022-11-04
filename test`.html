@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<div id = "header">
+    <ul id = "navigation">
+        <li class = "navLi"><a href = "" class = "headLinks">Home</a></li>
+        <li class = "navLi"><a href = ""  class = "headLinks">Courses</a></li>
+        <li class = "navLi"><a href = ""  class = "headLinks">Help</a></li>
+        <li class = "navLi"><a href = ""  class = "headLinks">Sign In/Sign Up</a></li>
+    </ul>
+</div>
+    <div class = "main">
+        <div id = "imageDiv"><img src = "Coding-vs-programming.jpg"></div>
+            <table>
+                <tr>
+                    <td colspan="3"><span id = "registrationTd">Registration</span></td>
+                </tr>
+                <tr>
+                    <td> Name:</td>
+                    <td> <input type = "text" placeholder="John" required = "required"></td>
+                    <td><span id = "aboutYrsl">Tell about yourself:</span></td>
+                </tr>
+                <tr>
+                    <td>Surname:</td>
+                    <td><input type = "text" placeholder="Wick"></td>
+                    <td rowspan="4"><textarea placeholder="I am young software developer, who wants to improve my skills at programming and get a well-paid job!"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td> Email:</td>
+                    <td> <input type = "email" placeholder="megakiller@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td> Password:</td>
+                    <td> <input type = "password"></td>
+                </tr>
+                <tr>
+                    <td> Country:</td>
+                    <td>  <input type = "text" placeholder="Pakistan"></td>
+                </tr>
+                <tr>
+                    <td>  Gender:</td>
+                    <td>
+                        <input type = "radio" name = "genders">Male
+                        <input type = "radio" name = "genders">Female
+                        <input type = "radio" name = "genders">Non-binary
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" id = "lastTd"><input type = "button" value="Submit" id = "buttonCol"></td>
+                </tr>
+            </table>
+    </div>
+
+<script>
+    const tableDiv = document.getElementsByTagName("table")[0];
+    const imageDiv = document.getElementById("imageDiv");
+    const allBody = document.getElementsByTagName("body")[0];
+    const sdfsdf = document.getElementsByClassName("navLi");
+    const headLinks = document.getElementsByClassName("headLinks");
+    for (let i = 0; i < sdfsdf.length; i++) {
+        sdfsdf[i].addEventListener("mouseover",()=>{
+            headLinks[i].style.color= "black";
+        })
+        sdfsdf[i].addEventListener("mouseout",()=>{
+            headLinks[i].style.color= "white";
+        })
+    }
+
+
+    window.addEventListener("load",()=>{
+        tableDiv.style.left = "48%";
+        imageDiv.style.left = "12%";
+        imageDiv.style.top = "12%";
+        imageDiv.style.opacity = "100%";
+        allBody.style.backgroundColor="black";
+
+    })
+
+</script>
+</body>
+</html>
